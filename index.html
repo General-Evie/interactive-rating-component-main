@@ -18,7 +18,7 @@
   <!-- Rating state start -->
 
   <main>
-    <section class="main">
+    <section class="main" id="main">
       <img class="star" src="images/icon-star.svg" alt="">
       <h1>How did we do?</h1>
       <p>
@@ -26,21 +26,21 @@
         to help us improve our offering!
       </p>
 
-      <div class="options">
-        <button class="rate" value="1">1</button>
-        <button class="rate" value="2">2</button>
-        <button class="rate" value="3">3</button>
-        <button class="rate" value="4">4</button>
-        <button class="rate" value="5">5</button>
+      <div class="options" id="rate">
+        <option class="rate" id="one">1</option>
+        <option class="rate" id="two">2</option>
+        <option class="rate" id="three">3</option>
+        <option class="rate" id="four">4</option>
+        <option class="rate" id="five">5</option>
       </div>
     
-      <button class="main-btn">Submit</button>
+      <button class="main-btn" onclick="submit();">Submit</button>
     </section>
     <!-- Rating state end -->
     <!-- Thank you state start -->
-    <section class="thx">
+    <section class="thx" id="thx">
       <img src="images/illustration-thank-you.svg" alt="">
-      <div class="result">You selected <!-- Add rating here --> out of 5</div>
+      <div class="result">You selected<span id="rating"> 1 </span>out of 5</div>
       <h2>Thank you!</h2>
       <p>
         We appreciate you taking the time to give a rating. If you ever need more support,
@@ -52,9 +52,13 @@
   <!-- Thank you state end -->
 
   
-  <div class="attribution">
+
+
+<script src="jquery-2.1.0.js"></script>
+<script src="main.js"></script> 
+</body>  
+<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/General-Evie">Evie Dickman</a>.
-  </div>
-</body>
+</div>
 </html>
