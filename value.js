@@ -2,26 +2,26 @@ var ratingData =
 {
     one: 
     {
-        number: 1
+        number: ' 1 '
     },
 
     two: 
     {
-        number: 2
+        number: ' 2 '
     },
 
     three: 
     {
-        number: 3
+        number: ' 3 '
     },
 
     four: 
     {
-        number: 4
+        number: ' 4 '
     },
 
     five:
     {
-        number : 5
+        number : ' 5 '
     }
 };

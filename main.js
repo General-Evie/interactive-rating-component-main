@@ -6,6 +6,9 @@ document.querySelectorAll('.rate').forEach(elem => elem.addEventListener('click'
 
 function submit()
 {
+    
+    var selected = document.querySelector('.opacity').value
+    document.getElementById('rating').textContent = ratingData[selected].number
     document.getElementById('main').style.display = 'none';
     document.getElementById('thx').style.display = 'block';
 };
